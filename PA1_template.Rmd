@@ -2,7 +2,7 @@ Reproducible Research: Peer Assessment 1
 ==========================================
 
 ```{r}
-echo = TRUE  # Always make code visible
+echo = TRUE
 ```
 
 ## Loading and preprocessing the data
