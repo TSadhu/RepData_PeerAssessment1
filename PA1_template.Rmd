@@ -9,6 +9,7 @@ echo = TRUE
 
 ```{r}
 data <- read.csv("activity.csv")
+data$month <- as.numeric(format(data$date, "%m"))
 data <- na.omit(data)
 ```
 
@@ -18,7 +19,7 @@ data <- na.omit(data)
 
 ```{r}
 library(ggplot2)
-ggplot(data, aes(date, steps))+ geom_bar(stat = "identity") + labs(title = "Histogram of Steps Taken on Each Day", x = "Date", y = "Total steps")
+ggplot(data, aes(date, steps))+ geom_bar(stat = "identity", colour = "steelblue", fill = "steelblue", width = 0.7) + labs(title = "Histogram of Steps Taken on Each Day", x = "Date", y = "Total steps")
 ```
 * Calculate and report the mean and median total number of steps taken per day
 
