@@ -8,7 +8,7 @@ echo = TRUE
 ## Loading and preprocessing the data
 
 ```{r}
-data <- read.csv("activity.csv")
+data <- read.csv("activity.csv",colClasses = c("integer", "Date", "factor"))
 data$month <- as.numeric(format(data$date, "%m"))
 data <- na.omit(data)
 ```
