@@ -17,6 +17,16 @@ data <- read.csv("activity.csv",colClasses = c("integer", "Date", "factor"))
 data$month <- as.numeric(format(data$date, "%m"))
 data <- na.omit(data)
 ```
+```
+##   steps       date interval month
+## 1     0 2012-10-02        0    10
+## 2     0 2012-10-02        5    10
+## 3     0 2012-10-02       10    10
+## 4     0 2012-10-02       15    10
+## 5     0 2012-10-02       20    10
+## 6     0 2012-10-02       25    10
+```
+
 
 ## What is mean total number of steps taken per day?
 
