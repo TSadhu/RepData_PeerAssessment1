@@ -37,7 +37,7 @@ library(ggplot2)
 ggplot(data, aes(date, steps))+ geom_bar(stat = "identity", colour = "steelblue", fill = "steelblue", width = 0.7) + labs(title = "Histogram of Steps Taken on Each Day", x = "Date", y = "Total steps")
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](1.png) 
 * Calculate and report the mean and median total number of steps taken per day
 
 Mean and Median of total number of steps taken per day:
